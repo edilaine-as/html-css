@@ -1,0 +1,196 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: Android;
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root{
+	--cor0: #c5ebd6;
+	--cor01: #83e1ad;
+	--cor02: #3ddc84;
+	--cor03: #2fa866;
+	--cor04:#1a5c37;
+	--cor05: #063d1e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'Android', cursive;
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+    background-color: #c5ebd6;
+    font-family: var(--fonte-padrao);
+}
+
+a.externo::after{ /*todo link termina com o emoji desse código abaixo*/
+    content: '\1F517';
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor03), var(--cor05));
+    min-height: 150px;
+    text-align: center;
+}
+
+header>h1{
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    font-weight: normal;
+    color: white;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.63);
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+header>p{
+    font-size: 1.2em;
+    color: white;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.63);
+    max-width: 600px;
+    margin: auto; /*isso foi necessario por causa do max-width, que transformou o p num bloco de no máximo 600px*/
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 30px;
+}
+
+nav{
+    background-color: var(--cor05);
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.335);
+    text-align: center;
+    padding: 10px;
+}
+
+nav>a{
+    color:var(--cor01);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    
+}
+
+nav>a:hover{
+    background-color: var(--cor03);
+    color: var(--cor05);
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+main{
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.424);
+    border-radius: 0px 0px 10px 10px;
+}
+
+main h1{
+    font-family: var(--fonte-android);
+    font-size: 1.8em;
+    color: var(--cor05);
+}
+
+main h2{
+    font-family: var(--fonte-android);
+    background-image: linear-gradient(to right, var(--cor01), transparent);
+    color: var(--cor04);
+    font-size: 1.3em;
+    font-weight: normal;
+    padding-left: 8px;
+}
+
+main p{ /*não coloquei o >, pois sem ele, o p pode estar dentro do main em qualquer nivel que as formatações vão ser aplicadas; com o >, a formatação não ia ser aplicadas para p dentro de aside*/
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em; /*espaçamento entre linhas*/
+    margin: 15px 0px 15px 0px; /*cima, direita, baixo, esquerda*/
+}
+
+main strong{
+    color: var(--cor04);
+    font-weight: bolder;
+    padding: 2px 6px; /*cima e baixo, direita e esquerda*/
+    
+}
+
+main a{
+    background-color: var(--cor01);
+    color: var(--cor05);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 2px 6px;
+}
+
+main a:hover{
+    color: var(--cor04);
+    text-decoration: underline;
+}
+
+main img{
+    width: 100%;
+}
+
+main img.pequena{
+    max-width: 350px;
+    display: block; /*transformamos em tipo bloco para imagem ser centralizada com margin auto*/
+    margin: auto;
+}
+
+div.video{
+    background-color: var(--cor05);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 57%;
+    position: relative;
+}
+
+div.video>iframe{
+    position: absolute; /*me permite mexer com top e left*/
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside{
+    background-color: var(--cor01);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.226);
+    
+}
+
+aside>ul{
+    list-style-type: '\2714\00a0'; /*\2714 é o código do emoji na emojipedia (tirei o U+), foi preciso colocar uma \ antes para o style-type funcionar/ 00a4 é o código do espaço*/
+    /*NÃO COMPATIVEL COM TODO TIPO DE NAVEGADOR*/
+    list-style-position: inside; /*o padrão é outside, por isso a bolinha estava pro lado de fora*/
+    columns: 2; /*duas colunas para lista*/
+}
+
+aside>h3{
+    background-color: var(--cor04);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px; /*a margem negativa vaza pra fora*/
+    border-radius: 10px 10px 0px 0px;
+}
+
+footer{
+    background-color: var(--cor05);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}

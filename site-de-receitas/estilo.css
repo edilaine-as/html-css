@@ -1,0 +1,125 @@
+	*
+	{
+		margin: 0px;
+		padding: 0px;
+	} /*limpando formatações*/
+	body
+	{
+		background: #e6e6e6;
+	} /*background*/
+
+	#principal
+	{
+		font-family: "Trebuchet MS", Helvetica, sans-serif;
+		font-size: 12px;
+	} /*definindo a div mãe, onde entra todas as divs*/
+	#menu 
+	{
+		font-size: 1.5em;
+		color: #FFF;
+		background-color: #649342;
+		padding: 20px;
+		text-align: center;
+	} /*fazendo o menu*/
+
+	#menu a
+	{
+		color: #FFF;
+		text-decoration: none;
+		margin: 10px;
+	} /*formatando todos os links do menu*/
+
+	#area-principal
+	{
+		width: 920px; 
+		margin: 0 auto; /*auto é o que centraliza o conteúdo*/
+		padding: 15px; /*espaço entre menu e conteudo*/
+	} /*definindo a div mãe de conteúdo, dentro ela vai ter a area de postagens e area lateral*/
+		#area-postagens
+		{
+			width: 660px;
+			float: left;
+		}
+
+			.postagem
+			{
+				padding: 20px;
+				margin-bottom: 20px;
+				background: #FFF;
+			}
+		
+				.postagem img 
+				{
+					width: 620px;
+					height: 420px;
+				} /*todas imagens da div postagem vai ser assim*/
+				.postagem h1
+				{
+					padding-top: 20px;
+					padding-bottom: 10px;
+				}
+				.postagem p
+				{
+					font-size: 1.3em;
+				}
+				.postagem li
+				{
+					font-size: 1.3em;
+					padding: 5px;
+					margin-left: 20px;
+				}
+				.postagem a
+				{
+					font-size: 1.2em;
+					color: #649342;
+				}
+
+		#area-lateral
+		{
+			width: 240px; /*660 + 240 = 900, sobrando 20px de espaçamento*/
+			float: right;
+		}
+			.conteudo-lateral 
+			{
+				background: #FFF;
+				padding: 10px;
+				margin-bottom: 20px; /*espaçamento entre postagens*/
+			}
+			.postagem-lateral
+			{
+				font-size: 1em;
+				padding: 5px;
+				border-bottom: 1px solid #CCC; /*formatando a borda lateral*/
+			}
+				.postagem-lateral a
+				{
+					color: #D62954;
+				}
+	
+
+	h1
+	{
+		font-size: 2em;
+		color: #649342;
+	}
+	h2
+	{
+		color: #FFF;
+		background: #D62954;
+		padding: 5px; 
+	}
+	h3
+	{
+		font-size: 1.5em;
+		color: #649342;
+		padding: 5px;
+
+	}
+	.data-postagem
+	{
+		font-size: 1em;
+		border-bottom: 1px solid #f4f4f4;
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+		display: block; /*bloqueando o inline e colocando comportamento bloco*/
+	}
