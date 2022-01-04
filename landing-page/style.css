@@ -7,13 +7,12 @@
 *{
     margin: 0px;
     padding: 0px;
+    outline: 0px;
     box-sizing: border-box;
     text-decoration: none;
 }
 
 body{
-    
-    font-size: 100%;
     background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
 }
 
@@ -23,10 +22,15 @@ body{
     align-items: center;
     justify-content: space-around;
     padding: 24px;
+
+    width: 100%;
+    max-width: 1280px;
 }
 
 .cabecalho-imagem{
     height: 72px;
+
+
 }
 
 .cabecalho-menu{
@@ -44,6 +48,9 @@ body{
 .conteudo{
     border-top: 0.4px solid #FFF2E7;
     margin-bottom: 48px;
+
+    width: 100%;
+    max-width: 1280px;
 }
 
 .conteudo-principal{
@@ -122,6 +129,9 @@ body{
 .rodape{
     padding: 32px;
     border-top:0.4px solid #FFF2E7;
+
+    width: 100%;
+    max-width: 1280px;
 }
 
 .rodape-imagem{
