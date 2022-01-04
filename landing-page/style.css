@@ -12,6 +12,10 @@
     text-decoration: none;
 }
 
+html{
+    font-size: 62.5%;
+}
+
 body{
     background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
 }
@@ -29,8 +33,6 @@ body{
 
 .cabecalho-imagem{
     height: 72px;
-
-
 }
 
 .cabecalho-menu{
