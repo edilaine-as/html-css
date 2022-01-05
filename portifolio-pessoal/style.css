@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Baloo+Da+2:wght@800&family=Sen:wght@400;700;800&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor-nav: white;
+    --cor-titulo-destaque: white;
+    --cor-titulo: white;
+    --cor-paragrafo: white;
+
+    --fonte-titulo-destaque: 'Baloo Da 2', cursive;;
+    --fonte-titulo: 'Baloo Chettan 2', cursive;
+    --fonte-paragrafo: 'Sen', sans-serif;;
+
+}
+
+body{
+    background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.cabecalho-imagem{
+    height: 72px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: var(--cor-nav);
+    padding-left: 50px;
+}
