@@ -5,6 +5,7 @@ Olá, estou aprendendo HTML e CSS, e abaixo você encontra o link dos projetos q
 Projetos (do mais recente pro mais antigo):
 <br>
 <ul>
+    <li><a href="https://edilaine-as.github.io/html-css/venda-cursos/index.html" target="_blank">Página Venda de Cursos</a></li>
     <li><a href="https://edilaine-as.github.io/html-css/projeto-cordel/index.html" target="_blank">Projeto cordel</a></li>
     <li><a href="https://edilaine-as.github.io/html-css/landing-page/index.html" target="_blank">Landing Page</a></li>
     <li><a href="https://edilaine-as.github.io/html-css/site-de-tecnologia/android.html" target="_blank">Página Web de Site de Tecnologia</a></li>
