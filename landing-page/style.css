@@ -13,7 +13,7 @@
 }
 
 html{
-    font-size: 62.5%;
+    font-size: 60.0%;
 }
 
 body{
@@ -27,8 +27,6 @@ body{
     justify-content: space-around;
     padding: 24px;
 
-    width: 100%;
-    max-width: 1280px;
 }
 
 .cabecalho-imagem{
@@ -51,8 +49,7 @@ body{
     border-top: 0.4px solid #FFF2E7;
     margin-bottom: 48px;
 
-    width: 100%;
-    max-width: 1280px;
+    
 }
 
 .conteudo-principal{
@@ -132,8 +129,7 @@ body{
     padding: 32px;
     border-top:0.4px solid #FFF2E7;
 
-    width: 100%;
-    max-width: 1280px;
+    
 }
 
 .rodape-imagem{
