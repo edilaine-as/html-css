@@ -390,7 +390,7 @@ img{ /*imagem responsiva*/
 	padding-right: 10px;
 }
 
-@media(max-width: 320px){
+@media(max-width: 375px){
 	.newsletter-form__input{
 		width: 220px;
 	}
