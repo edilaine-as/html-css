@@ -152,6 +152,10 @@ body{
 }
 
 @media(max-width: 800px){
+    html{
+        font-size: 55.0%;
+    }
+
     .cabecalho-imagem{
         padding-bottom: 20px;
     }
@@ -162,7 +166,13 @@ body{
     }
 }
 
-@media (max-width: 500px){
+@media (max-width: 425px){
+    html{
+        font-size: 45.0%;
+    }
+    .cabecalho-imagem{
+        padding-right: 20px;
+    }
     .cabecalho-menu{
         display: flex;
         gap: 9px; 
