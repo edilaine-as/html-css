@@ -10,13 +10,18 @@
     --fonte3: 'Sriracha', cursive;
 }
 
+html{
+    font-size: 120%;
+}
+
 *{
     margin: 0px;
     padding: 0px;
     outline: 0px;
     box-sizing: border-box;
-    font-size: 1em;
+    font-size: 1rem;
 }
+
 
 html,body{
     min-height: 100vh;
@@ -35,7 +40,7 @@ header>h1{
     font-variant: small-caps;
     /*text-transform: uppercase; --transforma em letra maiuscula*/
     font-family: var(--fonte2);
-    font-size: 5vw;
+    font-size: 3rem;
 }
 
 header>p{
@@ -55,10 +60,10 @@ header a:hover, footer a:hover{
 section{
     padding-top: 10vh;
     padding-bottom: 10vh;    
-    line-height: 2em;
+    line-height: 1.5em;
     padding-left: 30px;
     font-family: var(--fonte3);
-    font-size: 2vw;
+    font-size: 2rem;
 }
 
 section>p{
@@ -102,4 +107,20 @@ footer{
     text-align: center;
     padding: 10px;
 }
+@media(min-width: 1024px){
+    html{
+        font-size: 140%;
+    }
+}
+@media(min-width:1440px){
+    html{
+        font-size: 175%;
+    }
+}
+@media(min-width: 2560px){
+    html{
+        font-size: 300%;
+    }
+}
+
 
