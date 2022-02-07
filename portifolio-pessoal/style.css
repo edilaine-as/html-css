@@ -9,10 +9,15 @@
 }
 
 :root{
-    --cor-nav: white;
-    --cor-titulo-destaque: white;
-    --cor-titulo: white;
-    --cor-paragrafo: white;
+    --cor-nav: #FFF2E7;
+    --cor-titulo-destaque: #FFF2E7;
+    --cor-titulo: #FFF2E7;
+    --cor-paragrafo: #FFF2E7;
+    --cor-botao: #ECD6C4;
+    --cor-botao-hover: #9E887F;
+    --cor-botao-conteudo: #402d2d;
+    --cor-conteudo: #242121;
+    --cor-conteudo-projeto: #4b4141;
 
     --fonte-titulo-destaque: 'Baloo Da 2', cursive;;
     --fonte-titulo: 'Baloo Chettan 2', cursive;
@@ -21,8 +26,7 @@
 }
 
 body{
-    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.844489) 46.35%, #7D3F3F 100%);
-    background-repeat: no-repeat;
+    background: linear-gradient(68.15deg, #2F2325 16.62%, #945d50 85.61%);
 }
 
 /*****************/
@@ -32,14 +36,17 @@ body{
 header{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    max-width: 960px;
+    margin: 20px auto;
     align-items: center;
     
 }
 
-.cabecalho-imagem{
-    height: 62px;
-    margin: 15px;
+.logo-portifolio{
+    font-family: var(--fonte-titulo-destaque);
+    font-size: 20px;
+    color: var(--cor-titulo-destaque);
 }
 
 header nav a{
@@ -58,8 +65,10 @@ header nav a{
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: space-between;
     max-width: 960px;
     margin: auto;
+    padding-top: 50px;
 }
 
 .conteudo-principal-escrito{
@@ -71,11 +80,44 @@ header nav a{
 .conteudo-principal-titulo{
     color: var(--cor-titulo);
     font-family: var(--fonte-titulo);
+    margin: -20px 0 0 0;
+    padding: 0;
 }
 
 .conteudo-principal-titulo-destaque{
     color: var(--cor-titulo-destaque);
     font-family: var(--fonte-titulo-destaque);
+    font-size: 45px;
+    padding: 0;
+    margin: -10px 0;
+    outline: 0;
+}
+
+.conteudo-princiapal-paragrafo{
+    margin-top: 10px;
+}
+
+.conteudo-principal-botao{
+    width: 180px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 25px;
+    background-color: var(--cor-botao);
+}
+.conteudo-principal-botao:hover{
+    background-color: var(--cor-botao-hover);
+}
+.conteudo-principal-botao-conteudo{
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    text-decoration: none;
+    color: var(--cor-botao-conteudo);
+    font-size: 1.1rem;
+    font-family: var(--fonte-titulo);
+    font-weight: bold;
 }
 
 .conteudo-principal-imagem{
@@ -90,4 +132,77 @@ header nav a{
 .conteudo-secundario{
     max-width: 960px;
     margin: auto;
+    margin-top: 70px;
+}
+.conteudo-secundario-escrito{
+    background-color: var(--cor-conteudo);
+    border-radius: 10px;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    height: 200px;
+}
+.conteudo-secundario-subtitulo, .conteudo-projetos-subtitulo{
+    color: var(--cor-paragrafo);
+    font-family: var(--fonte-paragrafo);
+    text-align: center;
+    padding-top: 20px;
+}
+.conteudo-secundario-skills{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+.conteudo-secundario-skills li{
+    margin-left: 40px;
+}
+.html, .css, .js, .github, .java, .banco{
+    font-size: 60px;
+    color: var(--cor-titulo);
+}
+
+.conteudo-projetos{
+    max-width: 960px;
+    margin: 20px auto;
+}
+.conteudo-projetos-subtitulo{
+    margin-bottom: 30px;
+}
+.conteudo-projetos-escrito{
+    background-color: var(--cor-conteudo);
+    border-radius: 10px;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    color: var(--cor-paragrafo);
+    padding-bottom: 20px;
+}
+.conteudo-projetos-trabalho{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--cor-conteudo-projeto);
+    max-width: 890px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.conteudo-projetos-trabalho-escrito{
+    margin: 20px;
+    width: 350px;
+}
+.conteudo-projetos-trabalho-escrito h1{
+    font-family: var(--fonte-titulo);
+}
+.conteudo-projetos-trabalho-escrito p{
+    font-family: var(--fonte-paragrafo);
+}
+.conteudo-projetos-trabalho img{
+    width: 370px;
+    margin: 20px;
+}
+footer{
+    margin-top: 70px;
+}
+footer>p{
+    color: var(--cor-paragrafo);
+    font-family: var(--fonte-paragrafo);
+    text-align: center;
+    margin: 35px;
 }
