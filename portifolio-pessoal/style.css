@@ -38,13 +38,12 @@ main{
 /*****************/
 
 header{
-    display: flex;
+    display: flex !important;
     flex-direction: row;
     justify-content: space-between;
     max-width: 960px;
     margin: 20px auto;
-    align-items: center;
-    
+    align-items: center;    
 }
 
 .logo-portifolio{
@@ -84,6 +83,7 @@ header nav a{
 .conteudo-principal-titulo{
     color: var(--cor-titulo);
     font-family: var(--fonte-titulo);
+    font-size: 2rem;
     margin: -20px 0 0 0;
     padding: 0;
 }
@@ -206,7 +206,8 @@ header nav a{
     color: var(--fonte-paragrafo);
 }
 .conteudo-projetos-trabalho img{
-    width: 370px;
+    
+    max-width: 400px;
     margin: 20px;
 }
 footer{
