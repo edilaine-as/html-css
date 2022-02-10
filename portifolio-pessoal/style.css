@@ -196,7 +196,7 @@ header nav a:hover{
     flex-wrap: wrap;
     justify-content: center;
     background-color: var(--cor-conteudo-projeto);
-    max-width: 890px;
+    width: 100%;
     margin: 0 auto;
     border-radius: 10px;
 }

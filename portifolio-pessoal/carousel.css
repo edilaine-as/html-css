@@ -1,9 +1,4 @@
-.carousel-control-prev{
-    left: -50px !important;
-}
-.carousel-control-next{
-    right: -50px !important;
-}
+
 .carousel-indicators{
     position: absolute;
     right: 0;
@@ -26,6 +21,10 @@
     
 }
 .carousel-inner{
-    padding: 0 50px;
     padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+.carousel-control-next, .carousel-control-prev{
+    border-radius: 10px;
 }
