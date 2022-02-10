@@ -96,13 +96,11 @@ header nav a:hover{
     margin: 0 auto;
     padding-top: 70px;
 }
-
 .conteudo-principal-escrito{
     color: var(--cor-paragrafo);
     font-family: var(--fonte-paragrafo);
     max-width: 438px;
 }
-
 .conteudo-principal-titulo{
     color: var(--cor-titulo);
     font-family: var(--fonte-titulo);
@@ -110,7 +108,6 @@ header nav a:hover{
     margin: -20px 0 0 0;
     padding: 0;
 }
-
 .conteudo-principal-titulo-destaque{
     color: var(--cor-titulo-destaque);
     font-family: var(--fonte-titulo-destaque);
@@ -130,6 +127,7 @@ header nav a:hover{
 .conteudo-principal-imagem:hover{
   transform: translateX(10px) scale(1.2);
 }
+
 /********************************/
 /*CONTEÚDO SECUNDÁRIO - SKILLS***/
 /********************************/
@@ -189,7 +187,7 @@ header nav a:hover{
     border-radius: 10px;
     box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
     color: var(--cor-paragrafo);
-    padding-bottom: 40px;
+    padding-bottom: 55px;
     padding-left: 15px;
     padding-right: 15px;
 }
