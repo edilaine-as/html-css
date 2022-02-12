@@ -19,6 +19,8 @@
 
 .typing-animation{
 	animation: typing 4s steps(100) 1s normal;
+    white-space: nowrap; 
+    overflow: hidden;
 }
 
 :root{
@@ -37,6 +39,10 @@
     --fonte-titulo: 'Baloo Chettan 2', cursive;
     --fonte-paragrafo: 'Sen', sans-serif;;
 
+}
+
+html{
+    font-size: 90.0%;
 }
 
 body{
@@ -62,7 +68,7 @@ header{
 
 .logo-portifolio{
     font-family: var(--fonte-titulo-destaque);
-    font-size: 20px;
+    font-size: 1.4rem;
     color: var(--cor-titulo-destaque);
     margin-bottom: 0 !important;
 }
@@ -70,6 +76,7 @@ header{
 header nav a{
     color: var(--cor-nav);
     font-family: var(--fonte-paragrafo);
+    font-size: 1.1rem;
     padding: 5px;
     margin-left: 50px;
     font-weight: bold;
@@ -93,8 +100,11 @@ header nav a:hover{
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 960px;
-    margin: 0 auto;
-    padding-top: 70px;
+    margin: 30px auto;
+    
+}
+.conteudo-principal h1{
+    line-height: 1.1;
 }
 .conteudo-principal-escrito{
     color: var(--cor-paragrafo);
@@ -105,24 +115,26 @@ header nav a:hover{
     color: var(--cor-titulo);
     font-family: var(--fonte-titulo);
     font-size: 2rem;
-    margin: -20px 0 0 0;
+    margin-bottom: 0 !important;
     padding: 0;
 }
 .conteudo-principal-titulo-destaque{
     color: var(--cor-titulo-destaque);
     font-family: var(--fonte-titulo-destaque);
-    font-size: 45px;
+    margin-bottom: 0 !important;
+    font-size: 2.8rem;
     padding: 0;
-    margin: -10px 0;
     outline: 0;
 }
-.conteudo-princiapal-paragrafo{
-    margin-top: 10px;
+.conteudo-principal-paragrafo{
+    margin: 20px 0 !important;
+    font-size: 1.1rem;
 }
 .conteudo-principal-imagem{
     width: 356px;
     height: 351px;
     transition: 0.4s;
+    margin: 80px 0;
 }
 .conteudo-principal-imagem:hover{
   transform: translateX(10px) scale(1.2);
@@ -135,7 +147,7 @@ header nav a:hover{
 .conteudo-secundario{
     max-width: 960px;
     margin: 10px auto;
-    margin-top: 110px;
+    
 }
 .conteudo-secundario-escrito{
     background-color: var(--cor-conteudo);
@@ -167,7 +179,7 @@ header nav a:hover{
     cursor: pointer !important;
 }
 .html, .css, .bootstrap, .js, .github, .java, .banco{
-    font-size: 60px;
+    font-size: 3.5rem;
     color: var(--cor-titulo);
 }
 
@@ -197,8 +209,10 @@ header nav a:hover{
     justify-content: center;
     background-color: var(--cor-conteudo-projeto);
     width: 100%;
-    margin: 0 auto;
+    height: 375px;
+    margin: auto;
     border-radius: 10px;
+    align-items: center;
 }
 .conteudo-projetos-trabalho-conteudo{
     margin: 15px 0;
@@ -219,8 +233,7 @@ header nav a:hover{
 }
 .img-trabalho{
     max-height: 259px;
-    position: relative;
-    top: 50px;
+    padding: 5px;
 }
 
 /********************************/
@@ -235,4 +248,26 @@ footer>p{
     font-family: var(--fonte-paragrafo);
     text-align: center;
     margin: 35px;
+}
+
+@media (max-width: 768px){
+    .conteudo-projetos-trabalho{
+        height: 650px;
+    }
+    .conteudo-principal-escrito{
+        
+    }
+}
+@media (max-width: 425px){
+    header nav a{
+        display: none;
+    }
+    .logo-portifolio{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+@media (max-width: 320px){
+
 }

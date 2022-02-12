@@ -7,4 +7,5 @@ $(document).ready(function(){
       $('#btn-next').click(function() {
         $('#carouselExampleIndicators').carousel('next');
       });
+      
 });
