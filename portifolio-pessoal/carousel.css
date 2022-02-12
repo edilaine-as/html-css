@@ -28,3 +28,11 @@
 .carousel-control-next, .carousel-control-prev{
     border-radius: 10px;
 }
+
+.carousel-control-next{
+    right: -10px !important;
+}
+
+.carousel-control-prev{
+    left: -10px !important;
+}
