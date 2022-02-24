@@ -281,9 +281,6 @@ footer>p{
     .conteudo-projetos-trabalho{
         height: 650px;
     }
-    .:nth-child(3){
-		order: -2; 
-	}
 }
 @media (max-width: 638px){
     .conteudo-principal{
