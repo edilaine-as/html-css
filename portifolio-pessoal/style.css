@@ -190,7 +190,7 @@ header nav a:hover{
     transition: 0.4s;
 }
 .conteudo-secundario-skills li:hover{
-    transform: scale(1.1);
+    animation: jumping 1.5s infinite;
 }
 .conteudo-secundario-skills abbr{
     cursor: pointer !important;
@@ -198,9 +198,6 @@ header nav a:hover{
 .html, .css, .bootstrap, .js, .github, .java, .banco{
     font-size: 3.5rem;
     color: var(--cor-titulo);
-}
-.icon-li:hover{
-    animation: jumping 1.5s infinite;
 }
 
 /*********************************/
