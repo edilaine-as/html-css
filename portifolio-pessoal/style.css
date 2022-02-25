@@ -48,7 +48,7 @@
 }
 
 html{
-    font-size: 90.0%;
+    font-size: 91.0%;
 }
 
 body{
@@ -274,12 +274,23 @@ footer>p{
 /********************************/
 /*MEDIAS*************************/
 /********************************/
-@media(max-width: 870px){
-
+@media (min-width: 802px){
+    .img-portifolio-celular{
+        display: none;
+    }
+    .img-trabalho-celular{
+        display: none;
+    }
 }
 @media (max-width: 801px){
     .conteudo-projetos-trabalho{
-        height: 650px;
+        height: 567px;
+    }
+    .img-portifolio{
+        display: none;
+    }
+    .img-trabalho-grande{
+        display: none;
     }
 }
 @media (max-width: 638px){
@@ -295,5 +306,10 @@ footer>p{
         display: block;
         width: 100%;
         text-align: center;
+    }
+}
+@media (max-width: 410px){
+    .conteudo-projetos-trabalho{
+        height: 600px;
     }
 }
