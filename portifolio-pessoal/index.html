@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="btn.css">
     <link rel="stylesheet" href="carousel.css">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -44,7 +45,7 @@
         </section>
 
         <section id="skills" class="conteudo-secundario">
-            <div class="conteudo-secundario-escrito">
+            <div class="conteudo-secundario-escrito" data-aos="fade-up-right">
                 <h2 class="conteudo-secundario-subtitulo">Minhas skills</h2>
                 <ul class="conteudo-secundario-skills">
                     <li class="icon-li"><abbr title="HTML"><i class="fab fa-html5 html"></abbr></i></li>
@@ -60,7 +61,7 @@
         </section>
 
         <section id="projetos" class="conteudo-projetos">
-            <div class="conteudo-projetos-escrito">
+            <div class="conteudo-projetos-escrito" data-aos="fade-up-right">
                 <h2 class="conteudo-projetos-subtitulo">Projetos</h2>
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 
@@ -152,6 +153,11 @@
         <hr>
         <p>Copyright &copy; 2022 Edilaine Santos</p>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  	<script>
+    	AOS.init({duration: 1000});
+  	</script>
 
     <script src="https://kit.fontawesome.com/ed10d85a60.js" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
