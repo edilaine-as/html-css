@@ -9,6 +9,7 @@
 		crossorigin="anonymous" /> <!--reseta todas as propriedades -->
 	<link rel="preconnect" href="https://fonts.gstatic.com"> 
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -49,7 +50,7 @@
 		</div>
 	</section>
 	<hr>
-	<section class="cursos" id="cursos">
+	<section class="cursos" id="cursos" data-aos="fade-right">
 		<h2 class="section__titulo">Nossos Cursos</h2>
 		<div class="cursos-c">
 			<div class="curso">
@@ -81,7 +82,7 @@
 		</div>
 	</section>
 	<hr>
-	<section class="planos" id="planos">
+	<section class="planos" id="planos" data-aos="fade-right">
 		<h2 class="section__titulo">Planos</h2>
 		<div class="planos-c">
 			<div class="plano">
@@ -125,7 +126,7 @@
 		</div>
 	</section>
 	<hr>
-	<section class="vantagens" id="vantagens">
+	<section class="vantagens" id="vantagens" data-aos="fade-right">
 		<div class="vantagens-c">
 			<div class="vantagem">
 				<h2 class="vantagem__titulo">Foco em projeto</h2>
@@ -194,5 +195,10 @@
 			<img src="img/logo.png" alt="" class="footer__logo">
 		</a>
 	</footer>
+
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  	<script>
+    	AOS.init({duration: 1000});
+  	</script>
 </body>
 </html>
