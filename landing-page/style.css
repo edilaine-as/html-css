@@ -166,15 +166,14 @@ body{
     }
 }
 
+@media (max-width: 540px){
+    .cabecalho-menu{
+        display: none;
+    }
+}
+
 @media (max-width: 425px){
     html{
         font-size: 45.0%;
-    }
-    .cabecalho-imagem{
-        padding-right: 20px;
-    }
-    .cabecalho-menu{
-        display: flex;
-        gap: 9px; 
     }
 }
